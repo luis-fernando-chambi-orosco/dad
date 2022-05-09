@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	<p>El dia de la semana es:</p>
+	<p id="demo"></p>
+	<p>por lo tanto hoy es:</p>
+	<p id="resultado"></p>
+	<script>
+      let hoy = new Date();
+       let dia =hoy.getDay();
+      document.getElementById("demo").innerHTML=dia
+       let x = diadehoy(dia);
+       document.getElementById("resultado").innerHTML = x;
+        function diadehoy (a){
+        const semana= ["domingo", "lunes", "martes","miercoles","jueves","viernes","sabado"];
+        return semana[a];
+       }
+	</script>
+</body>
+</html>
