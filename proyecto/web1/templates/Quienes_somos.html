@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <title>Minics</title>
+  <style>
+    p::first-letter{
+      font-size:45px;
+    }
+    p{
+      font-size: 25px;
+    }
+  </style>
+
+</head>
+
+<body class="sub_page">
+  {% extends "barra.html" %}
+   {% load static %}
+   {% block content %}
+  <!-- about section -->
+
+  <section class="about_section">
+    <div class="container-fluid  ">
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <div class="detail-box pr-md-3">
+            <div class="heading_container">
+              <h1>  
+                <b>Quiénes somos</b> 
+              </h1>
+            </div>
+            <p>
+            Somos una tienda que Llevamos mucho tiempo, construyendo y adaptándonos a lo que necesitas a medida que hemos ido avanzando.
+            No obstante, no es tanto todo lo que hemos hecho sino nuestra manera de hacerlo. Por ello, queremos que tengas claro que 
+            puedes esperar de nosotros y en qué centramos nuestros esfuerzos día a día. Para que sepas que puedes esperar de nombre del la tienda 
+            </p>
+            <p>
+             Queremos ofrecer  una experiencia que te permitirán sentirnos aún más cerca. Porque queremos ofrecerte un punto de encuentro para personas que comparten nuestra pasión por la tecnología,
+              dispuestas a probar, a divertirse, y a disfrutar.
+            </p>
+          
+            <p>
+             Procedemos de una cultura de calidez y pertenencia, donde todo el mundo es bienvenido. Más allá de clientes o compradores, queremos poner el foco en las personas, personas con las que comprometernos, con las que conectar, a las que ofrecer una experiencia de compra impecable.
+             En definitiva, si hay algo que tenemos claro, es que siempre estaremos cerca. 
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src= "{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+
+</body>
+{% endblock %}
+</html>
