@@ -1,1 +1,4 @@
-web: python managa.py runserver 0.0.0.0:$PORT
+realease: python manage.py makemigrations --no-input
+realease: python manage.py migrate --no-input
+
+web: gunicorn django_to_heroku.wsgi 
